@@ -2,12 +2,14 @@
 <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.12.4/dist/aframe-extras.min.js"></script>
 <!-- script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.1/aframe/build/aframe-ar.js"></script -->
 <body style='margin : 0px; overflow: hidden;'>
-	<a-scene embedded>
-<!-- below is for content -->
-
-<!-- scale values allow you to adjust the file’s display size, gltf-model=“#your file name“ -->
-<a-entity gltf-model-legacy="src: url(scene.gltf);"></a-entity>
-		<!-- a-marker-camera preset='hiro'></a-marker-camera -->
-	</a-scene>
+<a-scene>
+  <a-assets>
+    <a-asset-item id="scene" src="scene.gltf">
+  </a-assets>
+  <!-- Using the asset management system. -->
+  <a-gltf-model src="#scene"></a-gltf-model>
+  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+  <a-gltf-model src="scene.gltf"></a-gltf-model>
+</a-scene>
 </body>
 
