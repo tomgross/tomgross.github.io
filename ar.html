@@ -1,18 +1,14 @@
-<!doctype HTML>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
-<style>
- #arjsDebugUIContainer { display: none; }
-</style>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.1/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.1/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs>
 <!-- below is for content -->
 <a-assets>
 <!-- id=“file name“ src=“file url" -->
-	<a-asset-item id="van" src="not_approved_street_art_van/scene.gltf"></a-asset-item>
+	<a-asset-item id="scene" src="not_approved_street_art_van/scene.gltf"></a-asset-item>
 </a-assets>
 <!-- scale values allow you to adjust the file’s display size, gltf-model=“#your file name“ -->
-<a-entity scale="20 20 20"  gltf-model="#van"></a-entity>
+<a-entity scale="20 20 20"  gltf-model="#scene"></a-entity>
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
 </body>
