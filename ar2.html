@@ -14,9 +14,11 @@
     	<a-assets>
 			<a-asset-item id="assetAframe" src="models/chr_knight.ply"></a-asset-item>
 		</a-assets>
+    
       <a-anchor hit-testing-enabled='true'>
 
-	      <a-text>Hallo AR!</a-text>
+       <a-entity ply-model="src: #assetAframe" rotation='-90 0 0'scale='0.02 0.02 0.02'></a-entity>
+ 
       </a-anchor>
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
