@@ -63,6 +63,7 @@ window.onload = () => {
         loadPlaces(position.coords)
             .then((places) => {
                 places.forEach((place) => {
+			if (place.name) {
                     const latitude = place.location.lat;
                     const longitude = place.location.lng;
 
@@ -102,6 +103,7 @@ window.onload = () => {
                     icon.addEventListener('click', clickListener);
                     
                     scene.appendChild(icon);
+			}
                 });
             })
     },
