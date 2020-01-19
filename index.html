@@ -1,30 +1,1409 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Toms VR Examples</title>
-    <meta name="description" content="Panorama — A-Frame">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NR5QC4Q');</script>
-<!-- End Google Tag Manager -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link href="assets/css.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Tom Gross</title>
+    <link href="assets/main.css" rel="stylesheet">
+    <style>@media print {
+        #ghostery-purple-box {
+            display: none !important
+        }
+    }</style>
+    <style type="text/css">.jJgHKD {
+        color: white;
+        text-decoration: none;
 
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.6);
+
+        padding-bottom: 1px;
+    }
+
+    .kPtMbP {
+        margin-bottom: 100px;
+    }
+
+    .cgIFHO {
+        font-size: 35px;
+        font-weight: 100;
+        margin: 0 0 20px 0;
+        color: white;
+        font-weight: 300;
+        padding-bottom: 5px;
+        position: relative;
+
+    }
+
+    .cgIFHO:before {
+        content: "";
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        color: white;
+        background-color: white;
+        position: absolute;
+        left: -85px;
+        top: 7px;
+        border: 5px solid #ff8906;
+
+    }
+
+    @media (max-width: 440px) {
+        .cgIFHO:before {
+            left: -45px;
+
+        }
+
+    }
+
+    .cgIFHO:first-of-type:before {
+        top: -1px;
+
+    }
+
+    @media (max-width: 440px) {
+        .cgIFHO {
+            font-size: 25px;
+
+        }
+
+    }
+
+    .bpssUY {
+        font-size: 18px;
+        list-style-type: none;
+        margin: 10px 0;
+        font-weight: 100;
+        line-height: 25px;
+    }
+
+    .hvMBRh {
+        padding: 0;
+    }
+
+    .kAOZjo {
+        margin: auto;
+        max-width: 960px;
+        width: 100%;
+
+
+        display: -webkit-box;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-orient: horizontal;
+        box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+
+
+        -webkit-box-pack: center;
+
+
+        -ms-flex-pack: center;
+
+
+        -moz-justify-content: center;
+
+
+        -webkit-justify-content: center;
+
+
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+
+        -ms-flex-wrap: wrap;
+
+
+        -webkit-flex-wrap: wrap;
+
+
+        flex-wrap: wrap;
+
+        height: 100%;
+
+    }
+
+    .dTcQdr {
+        margin: auto;
+        max-width: 960px;
+        width: 100%;
+
+    }
+
+    .eYSiXr {
+        padding-bottom: 50px;
+
+
+        color: white;
+        border-left: 5px solid rgba(255, 255, 255, 0.5);
+        padding-left: 70px;
+        margin-left: 20px;
+        position: relative;
+
+    }
+
+    @media (max-width: 440px) {
+        .eYSiXr {
+            padding-left: 30px;
+
+        }
+
+    }
+
+    .kmaCwC {
+        background-color: rgba(255, 255, 255, 0.16);
+        -ms-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -webkit-transition: all 200ms linear;
+        transition: all 200ms linear;
+        border: 0;
+        -moz-cursor: pointer;
+        -webkit-cursor: pointer;
+        cursor: pointer;
+        border-radius: 3px;
+        color: white;
+        font-weight: 100;
+        padding: 10px 15px;
+        font-size: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.69);
+        margin-top: 50px;
+    }
+
+    .kmaCwC:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .cQBcD {
+        font-size: 18px;
+        list-style-type: none;
+        margin: 10px 0;
+        font-weight: 100;
+        line-height: 25px;
+
+        margin: 35px 0;
+    }
+
+    .ehPVeV {
+        color: white;
+        text-decoration: none;
+
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.6);
+
+        padding-bottom: 1px;
+
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+
+    .dSrFWO {
+        color: white;
+        text-decoration: none;
+
+        padding-bottom: 1px;
+
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+
+    .a {
+    }
+
+    .iDpFim {
+        font-size: 30px;
+        font-weight: 300;
+        position: relative;
+
+    }
+
+    .iDpFim:before {
+        content: "";
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        color: white;
+        background-color: white;
+        position: absolute;
+        left: -85px;
+        top: 0px;
+        border: 5px solid #f25f4c;
+
+    }
+
+    @media (max-width: 440px) {
+        .iDpFim:before {
+            left: -45px;
+
+        }
+
+    }
+
+    @media (max-width: 440px) {
+        .iDpFim {
+            font-size: 22px;
+
+        }
+
+    }
+
+    .hJrIXU {
+        position: relative;
+        padding: 0;
+        margin: 15px 0;
+        line-height: 25px;
+    }
+
+    .hJrIXU:before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        color: white;
+        background-color: white;
+        position: absolute;
+        left: -80px;
+        top: 4px;
+        border: 4px solid #e53170;
+    }
+
+    @media (max-width: 440px) {
+        .hJrIXU:before {
+            left: -40px;
+        }
+    }
+
+    .itAsuH {
+        position: relative;
+        padding: 0;
+        margin: 15px 0;
+        line-height: 25px;
+
+        line-height: 30px;
+    }
+
+    .itAsuH:before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        color: white;
+        background-color: white;
+        position: absolute;
+        left: -80px;
+        top: 4px;
+        border: 4px solid #333959;
+    }
+
+    @media (max-width: 440px) {
+        .itAsuH:before {
+            left: -40px;
+        }
+    }
+
+    .itAsuH a {
+        margin: 0 7px;
+    }
+
+    .otOCn {
+        font-size: 18px;
+        list-style-type: none;
+        margin: 10px 0;
+        font-weight: 100;
+        line-height: 25px;
+
+
+    }
+
+    .Ovzta {
+
+        display: -webkit-box;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-orient: horizontal;
+        box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .kntiRb {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        -ms-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -webkit-transition: all 200ms linear;
+        transition: all 200ms linear;
+        display: block;
+        color: gray;
+        text-decoration: none !important;
+        padding: 0;
+    }
+
+    .kntiRb:hover h3 {
+        color: #424c54;
+    }
+
+    .kntiRb:hover div {
+        color: #2e373e;
+    }
+
+    .dGPhLs {
+        -ms-transition: color 100ms linear;
+        -moz-transition: color 100ms linear;
+        -webkit-transition: color 100ms linear;
+        transition: color 100ms linear;
+        font-size: 13px;
+        font-weight: 300;
+        margin-top: 5px;
+        color: #9c9c9c;
+    }
+
+    .kBUYCm {
+        -ms-transition: all 100ms linear;
+        -moz-transition: all 100ms linear;
+        -webkit-transition: all 100ms linear;
+        transition: all 100ms linear;
+        margin: 0 0 8px 0;
+        color: #57626b;
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    .jmQcsI {
+
+        display: -webkit-box;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-orient: horizontal;
+        box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+
+        padding: 0;
+        list-style-type: none;
+        margin: 8px 0;
+    }
+
+    .jpRXNr {
+        font-size: 12px;
+        background-color: #8189b3;
+        color: white;
+        border-radius: 3px;
+        padding: 2px 6px;
+        margin-right: 5px;
+    }
+
+    .gwaIZB {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    .cEnwQi {
+        padding-bottom: 50px;
+
+
+        padding: 0px 20px;
+
+
+    }
+
+    @keyframes iECmZH {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    .gSuKxK {
+        font-size: 10px;
+        text-indent: -9999em;
+        width: 4em;
+        height: 4em;
+        border-radius: 50%;
+        background: #333959;
+        background: linear-gradient(to right, #333959 10%, rgba(187, 255, 248, 0) 42%);
+        position: relative;
+        -moz-animation: iECmZH 0.8s infinite linear;
+        -webkit-animation: iECmZH 0.8s infinite linear;
+        animation: iECmZH 0.8s infinite linear;
+        -ms-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+    .gSuKxK:before {
+        width: 50%;
+        height: 50%;
+        background: #333959;
+        border-radius: 100% 0 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+    }
+
+    .gSuKxK:after {
+        background: white;
+        width: 75%;
+        height: 75%;
+        border-radius: 50%;
+        content: '';
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }</style>
+    <style type="text/css">.ierVIl {
+        -ms-transition: background-color 200ms linear;
+        -moz-transition: background-color 200ms linear;
+        -webkit-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+        padding: 10px;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+
+        background-color: #ff8906;
+
+    }
+
+    .hOgJuv {
+        -ms-transition: background-color 200ms linear;
+        -moz-transition: background-color 200ms linear;
+        -webkit-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+        padding: 10px;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+
+        background-color: #333959;
+
+    }
+
+    .inPsJc {
+        -ms-transition: opacity 200ms linear;
+        -moz-transition: opacity 200ms linear;
+        -webkit-transition: opacity 200ms linear;
+        transition: opacity 200ms linear;
+        color: white;
+        -moz-cursor: pointer;
+        -webkit-cursor: pointer;
+        cursor: pointer;
+        opacity: 0.8;
+
+
+        opacity: 1;
+        font-weight: bold;
+    }
+
+    .inPsJc:hover {
+        opacity: 1;
+    }
+
+    .inPsJc:after {
+        content: '/';
+        margin: 0 30px;
+    }
+
+    .inPsJc:last-child:after {
+        display: none;
+    }
+
+    .ftmXsr {
+        -ms-transition: opacity 200ms linear;
+        -moz-transition: opacity 200ms linear;
+        -webkit-transition: opacity 200ms linear;
+        transition: opacity 200ms linear;
+        color: white;
+        -moz-cursor: pointer;
+        -webkit-cursor: pointer;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    .ftmXsr:hover {
+        opacity: 1;
+    }
+
+    .ftmXsr:after {
+        content: '/';
+        margin: 0 30px;
+    }
+
+    .ftmXsr:last-child:after {
+        display: none;
+    }
+
+    .cjlUQJ {
+        position: relative;
+        padding-top: 80px;
+
+
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    .fqNVke {
+        position: relative;
+        padding-top: 80px;
+
+
+    }
+
+    @media (max-width: 768px) {
+        .fqNVke {
+            padding-top: 50px;
+
+
+        }
+
+
+    }
+
+    .lkrUHr {
+        display: -webkit-box;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-orient: horizontal;
+        box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+
+    }
+
+    @media (max-width: 768px) {
+        .lkrUHr {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+
+        }
+
+    }
+
+    .bDNMen {
+        width: auto;
+        min-width: 300px;
+        min-height: calc(100vh - 50px);
+        minHeight: -webkit-calc(100vh - 50px);
+        minHeight: -moz-calc(100vh - 50px);
+
+
+    }
+
+    @media (max-width: 768px) {
+        .bDNMen {
+            min-width: 0;
+            width: 100%;
+
+
+        }
+
+
+    }
+
+    @media (max-width: 768px) {
+        .bDNMen {
+            display: -webkit-box;
+            display: flex;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -moz-justify-content: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+
+
+        }
+
+
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    .bISfUE {
+        width: auto;
+        min-width: 300px;
+        min-height: calc(100vh - 50px);
+        minHeight: -webkit-calc(100vh - 50px);
+        minHeight: -moz-calc(100vh - 50px);
+
+
+    }
+
+    @media (max-width: 768px) {
+        .bISfUE {
+            min-width: 0;
+            width: 100%;
+
+
+        }
+
+
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 768px) {
+        .bISfUE {
+            padding-right: 0;
+            padding-top: 0;
+            -webkit-box-align: initial;
+            -ms-flex-align: initial;
+            -webkit-align-items: initial;
+            align-items: initial;
+            -webkit-box-pack: initial;
+            -ms-flex-pack: initial;
+            -moz-justify-content: initial;
+            -webkit-justify-content: initial;
+            justify-content: initial;
+            display: -webkit-box;
+            display: flex;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            -webkit-box-orient: horizontal;
+            box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            padding: 0px 20px;
+            min-height: 0;
+
+
+        }
+
+
+    }
+
+    .hWmzwj {
+
+        color: white;
+
+
+        display: -webkit-box;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+
+
+        -webkit-box-align: center;
+
+
+        -ms-flex-align: center;
+
+
+        -webkit-align-items: center;
+
+
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+
+
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    .dUfuog {
+
+
+        display: -webkit-box;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+
+
+        -webkit-box-align: center;
+
+
+        -ms-flex-align: center;
+
+
+        -webkit-align-items: center;
+
+
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+
+
+    }
+
+    @media (max-width: 768px) {
+        .dUfuog {
+
+
+            margin: 30px 0;
+
+
+            -webkit-box-align: initial;
+
+
+            -ms-flex-align: initial;
+
+
+            -webkit-align-items: initial;
+
+
+            align-items: initial;
+
+
+            -webkit-box-pack: initial;
+
+
+            -ms-flex-pack: initial;
+
+
+            -moz-justify-content: initial;
+
+
+            -webkit-justify-content: initial;
+
+
+            justify-content: initial;
+
+
+        }
+
+
+    }
+
+    .fBOHbD {
+        text-align: center;
+    }
+
+    .iiMyyQ {
+
+        display: -webkit-box;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+
+
+    }
+
+    @media (max-width: 768px) {
+        .iiMyyQ {
+
+            margin-left: 15px;
+
+
+        }
+
+
+    }
+
+    .iPhvGE {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: 0 0;
+        margin-top: 0px;
+        border-radius: 100%;
+
+
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    .hHdAbC {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: 0 0;
+        margin-top: 0px;
+        border-radius: 100%;
+
+        -ms-box-shadow: 0 0 9px 1px rgba(49, 49, 49, 0.17);
+
+        -moz-box-shadow: 0 0 9px 1px rgba(49, 49, 49, 0.17);
+
+        -webkit-box-shadow: 0 0 9px 1px rgba(49, 49, 49, 0.17);
+
+        box-shadow: 0 0 9px 1px rgba(49, 49, 49, 0.17);
+
+
+    }
+
+    @media (max-width: 768px) {
+        .hHdAbC {
+            width: 100px;
+            height: 100px;
+
+
+        }
+
+
+    }
+
+    .jtPHTS {
+        font-size: 30px;
+        font-weight: 300;
+        margin: 50px 0 0px 0;
+
+
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    .duZtgO {
+        font-size: 30px;
+        font-weight: 300;
+        margin: 50px 0 0px 0;
+
+        color: #848484;
+
+
+    }
+
+    @media (max-width: 768px) {
+        .duZtgO {
+            margin: 5px 0;
+
+
+        }
+
+
+    }
+
+    .amgNL {
+        margin-top: 10px;
+        font-weight: 100;
+        font-size: 17px;
+
+
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    .kSgMfl {
+        margin-top: 10px;
+        font-weight: 100;
+        font-size: 17px;
+
+
+    }
+
+    .kSgMfl color: gray
+
+
+    @media (max-width: 768px) {
+        margin:
+
+    5px
+
+    0;
+
+
+    }
+
+    .ddJdQ {
+
+        display: -webkit-box;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+
+
+        -webkit-box-align: center;
+
+
+        -ms-flex-align: center;
+
+
+        -webkit-align-items: center;
+
+
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+
+        -moz-cursor: default;
+
+        -webkit-cursor: default;
+
+        cursor: default;
+
+
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    .hAAHJw {
+
+        display: -webkit-box;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+
+
+        -webkit-box-align: center;
+
+
+        -ms-flex-align: center;
+
+
+        -webkit-align-items: center;
+
+
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+
+        -moz-cursor: pointer;
+
+        -webkit-cursor: pointer;
+
+        cursor: pointer;
+
+
+    }
+
+    @media (max-width: 768px) {
+        .hAAHJw {
+
+            margin-bottom: 10px;
+
+            display: -webkit-box;
+            display: flex;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+
+            -webkit-box-orient: horizontal;
+
+            box-orient: horizontal;
+
+            -webkit-box-direction: normal;
+
+            -ms-flex-direction: row;
+
+            -webkit-flex-direction: row;
+
+            flex-direction: row;
+
+
+        }
+
+
+    }
+
+    .iefKbd {
+        padding: 0;
+        margin: 15px 0 0 0;
+
+        display: -webkit-box;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-orient: horizontal;
+        box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 768px) {
+        .eKqkqw {
+            display: none !important
+        }
+    }
+
+    .hcQPhJ {
+        font-size: 22px;
+        opacity: 0.6;
+        -ms-transition: all 100ms linear;
+        -moz-transition: all 100ms linear;
+        -webkit-transition: all 100ms linear;
+        transition: all 100ms linear;
+        margin-bottom: 15px;
+        color: white;
+
+
+    }
+
+    .hcQPhJ:hover {
+        opacity: 1;
+
+
+    }
+
+    @media (max-width: 440px) {
+        .hcQPhJ {
+            font-size: 24px;
+            margin: 0 2px;
+
+
+        }
+
+
+    }
+
+    @media (max-width: 320px) {
+        .hcQPhJ {
+            font-size: 20px;
+            margin: 0 2px;
+
+
+        }
+
+
+    }
+
+    .fdefaQ {
+        font-size: 22px;
+        opacity: 0.6;
+        -ms-transition: all 100ms linear;
+        -moz-transition: all 100ms linear;
+        -webkit-transition: all 100ms linear;
+        transition: all 100ms linear;
+        margin-bottom: 15px;
+        color: white;
+
+
+        color: gray;
+
+    }
+
+    .fdefaQ:hover {
+        opacity: 1;
+
+    }
+
+    @media (max-width: 440px) {
+        .fdefaQ {
+            font-size: 24px;
+            margin: 0 2px;
+
+        }
+
+    }
+
+    @media (max-width: 320px) {
+        .fdefaQ {
+            font-size: 20px;
+            margin: 0 2px;
+
+        }
+
+    }
+
+    .eguIab {
+        border-bottom: 0;
+    }
+
+    .kGkggP {
+        font-size: 18px;
+        list-style-type: none;
+        margin: 10px 0;
+        font-weight: 100;
+        line-height: 25px;
+
+        display: inline-block;
+        margin: 0 10px;
+
+
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    .ippxS {
+        font-size: 18px;
+        list-style-type: none;
+        margin: 10px 0;
+        font-weight: 100;
+        line-height: 25px;
+
+        display: inline-block;
+        margin: 0 10px;
+
+
+    }
+
+    @media (max-width: 768px) {
+        .ippxS:first-child {
+            margin-left: 0;
+
+
+        }
+
+
+    }
+
+    body {
+        background-color: #0f0e17;
+    }
+
+    </style>
+    <meta name="og:type" content="website" data-react-helmet="true">
+    <meta name="og:url" content="https://tomgross.github.io" data-react-helmet="true">
+    <meta name="og:title" content="Toms Portfolio" data-react-helmet="true">
+    <meta name="og:description" content="Toms Portfolio" data-react-helmet="true">
+    <meta name="og:image" content="https://tomgross.github.io/assets/avatar.png" data-react-helmet="true">
+    <meta name="twitter:card" content="summary_large_image" data-react-helmet="true">
+    <meta name="twitter:site" content="https://tomgross.github.io" data-react-helmet="true">
+    <meta name="twitter:creator" content="@tomgross" data-react-helmet="true">
+    <meta name="twitter:title" content="Tom" data-react-helmet="true">
+    <meta name="twitter:description" content="Tom's Portfolio" data-react-helmet="true">
+    <meta name="twitter:image" content="https://tomgross.github.io/assets/avatar.png" data-react-helmet="true">
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NR5QC4Q"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  <ul>
-  <li><a href="newyork.html">New York</a></li>
-  <li><a href="australia.html">Australia</a></li>
-      <li><a href="https://www.openbsd.org">OpenBSD</a></li>
-      <li><a href="https://www.plone.org">Plone</a></li>
-      
-  </ul>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VNLGuDHVJ_o" frameborder="0" allowfullscreen></iframe>
+<div id="root">
+    <div data-reactroot="" class="cjlUQJ">
+        <div id="router" class="dTcQdr">
+            <div class="lkrUHr">
+                <div id="left-side" class="animated fadeIn bDNMen">
+                    <div id="kitze-info" class="hWmzwj">
+                        <div id="clickable-top" class="ddJdQ"><img src="assets/avatar.png" alt="me" class="iPhvGE">
+                            <div class="iiMyyQ"><h1 class="jtPHTS"> Hi, I'm Tom! </h1><h4 class="amgNL"> I find solutions. </h4></div>
+                        </div>
+                        <div class="fBOHbD">
+                            <ul class="iefKbd">
+                                <li class="kGkggP"><a href="mailto:itconsense+web@gmail.com" target="_blank"
+                                                      class="eguIab">
+                                    <div class="fa fa-envelope hcQPhJ"></div>
+                                </a></li>
+                                <li class="kGkggP"><a href="https://www.linkedin.com/in/tomgross42" target="_blank"
+                                                      class="eguIab">
+                                    <div class="fa fa-linkedin hcQPhJ"></div>
+                                </a></li>
+                                <li class="kGkggP"><a href="https://twitter.com/tom_gross" target="_blank"
+                                                      class="eguIab">
+                                    <div class="fa fa-twitter hcQPhJ"></div>
+                                </a></li>
+                                <li class="kGkggP"><a href="https://github.com/tomgross" target="_blank" class="eguIab">
+                                    <div class="fa fa-github hcQPhJ"></div>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <span class="scroll-btn hFbIZr"><div><span class="mouse"><span></span></span></div></span></div>
+                </div>
+                <div id="right-side-home" class="eYSiXr"><!-- react-empty: 525 -->
+                    <section id="who" class="animated fadeInDown kPtMbP"><h3 class="cgIFHO"> Who I am </h3>
+                        <ul class="hvMBRh">
+                            <li class="bpssUY">Agile Consultant</li>
+                            <li class="bpssUY">Software Architect</li>
+                            <li class="bpssUY"><a target="_blank" href="https://github.com/tomgross" class="jJgHKD">Web- & AI-Developer</a></li>
+                        </ul>
+                    </section>
+                    <section id="sup" class="animated fadeInDown kPtMbP"><h3 class="cgIFHO"> What I do </h3>
+                        <ul class="hvMBRh">
+                            <li class="bpssUY">Structuring problems</li>
+                            <li class="bpssUY">Finding solutions</li>
+                        </ul>
+                    </section>
+                    <section id="projects" class="animated fadeInDown kPtMbP"><h3 class="cgIFHO"> Projects I'm proud
+                        of </h3>
+                        <ul class="hvMBRh">
+                            <li class="cQBcD"><a target="_blank" href="https://www.fhnw.ch/" class="ehPVeV">
+                                <div class="iDpFim">Web relaunch @ FHNW</div>
+                            </a>
+                                <div class="a"><p class="hJrIXU">Technical management of DevOps team</p>
+                                    <p class="hJrIXU">Software architecture</p>
+                                </div>
+                            </li>
+                            <li class="cQBcD">
+                                <div class="iDpFim">Migräne Aura (discontinued)</div>
+                                <div class="a"><p class="hJrIXU">Zope powered Website for medical aspects of migraine. XSLT based migration from legacy HTML site.</p></div>
+                            </li>
+                            <li class="cQBcD"><a target="_blank" href="https://www.presentation-power.ch/" class="ehPVeV">
+                                <div class="iDpFim">Presentation Power</div>
+                            </a>
+                                <div class="a"><p class="hJrIXU">Business website for presentation coaching. Implemented with Lektor static content management system.</p></div>
+                            </li>
+                            <li class="cQBcD"><a target="_blank" href="https://www.openhub.net/p/plone/contributors/300647780385" class="ehPVeV">
+                                <div class="iDpFim">Plone core development</div>
+                            </a>
+                                <div class="a"><p class="hJrIXU">Contributed to several core and collective packages (including referencebrowser, easyform, etc.)</p></div>
+                            </li>
+
+                        </ul>
+                    </section>
+                    <section id="speaking" class="kPtMbP"><h3 class="cgIFHO"> Speaking </h3>
+                        <ul class="hvMBRh">
+                            <li class="otOCn"><span><!-- react-text: 630 --> <!-- /react-text -->
+                                <!-- react-text: 631 -->28.04.16<!-- /react-text --><!-- react-text: 632 --> -
+                                <!-- /react-text --></span><b><!-- react-text: 634 --> <!-- /react-text -->
+                                <!-- react-text: 635 -->Web development & testing process (german)<!-- /react-text --><!-- react-text: 636 -->
+                                <!-- /react-text --></b><span><!-- react-text: 638 --> - <!-- /react-text -->
+                                <!-- react-text: 639 -->Insights into the development and quality assurance process for the web platform @ FHNW.
+                                <!-- /react-text --><!-- react-text: 640 --> <!-- /react-text --></span></li>
+                            <li class="otOCn"><span><!-- react-text: 617 --> <!-- /react-text -->
+                                <!-- react-text: 618 -->21.10.16<!-- /react-text --><!-- react-text: 619 --> -
+                                <!-- /react-text --></span><b><!-- react-text: 621 --> <!-- /react-text -->
+                                <!-- react-text: 622 -->Plone Conference (Boston)<!-- /react-text -->
+                                <!-- react-text: 623 --> <!-- /react-text --></b><span><!-- react-text: 625 --> -
+                                <!-- /react-text --><!-- react-text: 626 -->Transforming for the Future: A Swiss University Success Story
+                                <!-- /react-text --><!-- react-text: 627 --> <!-- /react-text --></span></li>
+                          </ul>
+                    </section>
+                    <section id="dev-stack" class="kPtMbP"><h3 class="cgIFHO"> Current dev stack </h3>
+                        <ul class="hvMBRh">
+                            <li class="bpssUY"> Python</li>
+                            <li class="bpssUY"> Java</li>
+                            <li class="bpssUY"> JavaScript</li>
+                            <li class="bpssUY"> Plone</li>
+                        </ul>
+                    </section>
+                    <section id="technologies" class="kPtMbP"><h3 class="cgIFHO"> Technologies I have used </h3>
+                        <ul class="hvMBRh">
+                            <li class="bpssUY"><span> Node.js, Gulp, Grunt, jQuery,
+Bootstrap, Docker, LXD, Puppet, Ansible, Gitlab, etc. etc. etc.</span></li>
+                        </ul>
+                    </section>
+                    <section id="libraries" class="kPtMbP"><h3 class="cgIFHO"> Code I've written </h3>
+                        <ul class="hvMBRh">
+                            <li class="bpssUY">
+                                <a href="https://github.com/tomgross/pycloud" target="_blank" class="jJgHKD">pycloud</a>
+                                <span>- A Python API for pCloud storage</span>
+                            </li>
+                            <li class="bpssUY">
+                                <a href="https://github.com/maskrcnn/Mask_RCNN/tree/tensorflow-2.0" target="_blank" class="jJgHKD">Mask RCNN</a>
+                                <span>- Ported Mask RCNN implementation to tensorflow 2.0</span>
+                            </li>
+                            <li class="bpssUY">
+                                <a href="https://pypi.org/project/collective.handlebars/" target="_blank" class="jJgHKD">collective.handlebars</a>
+                                <span>- Handlebars templating integration for Plone</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="achievements" class="kPtMbP"><h3 class="cgIFHO"> Books I've written </h3>
+                        <ul class="hvMBRh">
+                            <li class="bpssUY"><a href="https://www.packtpub.com/web-development/plone-3-multimedia" target="_blank" class="jJgHKD">Plone 3 Multimedia</a></li>
+                            <li class="bpssUY"><p><a href="https://www.amazon.de/Maschinen-Searles-moderne-Interpretation-K%C3%B6rper-Geist-Problems/dp/3938307056"
+                                                       target="_blank" class="jJgHKD">Können Maschinen denken? (german)</a>
+                                <!-- react-text: 900 -->Searles moderne Interpretation des Körper-Geist-Problems.</p>
+                                <!-- /react-text --></li>
+                        </ul>
+                    </section>
+                    <button class="kmaCwC">I wanna know more!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="assets/main.js"></script>
 </body>
 </html>
